@@ -1,13 +1,13 @@
 {
-  "id": "worldbuilding",
-  "version": "0.8.2",
-  "title": "Simple World-Building",
+  "id": "ultradifra",
+  "version": "0.1",
+  "title": "UltraDifra",
   "url": "https://github.com/foundryvtt/worldbuilding/",
-  "description": "A minimalist game system which provides configurable Actor and Item templates to support free-form system agnostic game-play.",
+  "description": "Un systeme de jeu generique et chaotique",
   "license": "LICENSE.txt",
   "authors": [
     {
-      "name": "Atropos",
+      "name": "Malryck",
       "url": "https://foundryvtt.com"
     }
   ],
@@ -16,14 +16,9 @@
   "packs": [],
   "languages": [
     {
-      "lang": "en",
-      "name": "English",
-      "path": "lang/en.json"
-    },
-    {
-      "lang": "pl",
-      "name": "Polski",
-      "path": "lang/pl.json"
+      "lang": "fr",
+      "name": "French",
+      "path": "lang/fr.json"
     }
   ],
   "compatibility": {
