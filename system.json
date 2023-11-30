@@ -1,47 +1,39 @@
 {
-  "id": "ultradifra",
-  "title": "Ultradifra",
-  "description": "Le systeme Ultradifra",
+  "id": "worldbuilding",
+  "version": "0.8.2",
+  "title": "Simple World-Building",
+  "url": "https://github.com/foundryvtt/worldbuilding/",
+  "description": "A minimalist game system which provides configurable Actor and Item templates to support free-form system agnostic game-play.",
+  "license": "LICENSE.txt",
   "authors": [
     {
-      "name": "Malryck",
-      "discord": "malryck"
+      "name": "Atropos",
+      "url": "https://foundryvtt.com"
     }
   ],
-  "url": "https://github.com/Domenc-M/ultradifra",
-  "license": "LICENSE.txt",
-  "readme": "README.md",
-  "bugs": "Replace this with a link to file issues or tickets",
-  "changelog": "CHANGELOG.md",
-  "media": [
-    {
-      "type": "setup",
-      "url": "systems/ultradifra/assets/anvil-impact.png",
-      "thumbnail": "systems/ultradifra/assets/anvil-impact.png"
-    }
-  ],
-  "version": "0.1",
-  "compatibility": {
-    "minimum": 11,
-    "verified": "11.315"
-  },
-  "esmodules": ["module/ultradifra.mjs"],
-  "styles": ["css/ultradifra.css"],
+  "esmodules": ["module/simple.js"],
+  "styles": ["styles/simple.css"],
+  "packs": [],
   "languages": [
     {
-      "lang": "fr",
-      "name": "French",
-      "path": "lang/fr.json"
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    },
+    {
+      "lang": "pl",
+      "name": "Polski",
+      "path": "lang/pl.json"
     }
   ],
-  "packs": [],
-  "packFolders": [],
-  "socket": false,
-  "manifest": "Replace this with a link to the /latest release system.json so people can receive updates after they've installed the system",
-  "download": "This must link to a .zip file of the current version",
-  "background": "systems/ultradifra/assets/anvil-impact.png",
+  "compatibility": {
+    "minimum": "10",
+    "verified": "11"
+  },
   "gridDistance": 5,
   "gridUnits": "ft",
   "primaryTokenAttribute": "health",
-  "secondaryTokenAttribute": "power"
+  "secondaryTokenAttribute": "power",
+  "manifest": "https://raw.githubusercontent.com/foundryvtt/worldbuilding/master/system.json",
+  "download": "https://github.com/foundryvtt/worldbuilding/archive/refs/tags/release-082.zip"
 }

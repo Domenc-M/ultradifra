@@ -4,9 +4,6 @@
 
 # Node Modules
 node_modules/
-npm-debug.log
+package-lock.json
 
-# Foundry
-*.lock
-jsconfig.json
-foundry
+worldbuilding.lock
