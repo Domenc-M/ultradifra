@@ -7,16 +7,6 @@
             <h1 class="charname">
                 <input name="name" type="text" value="{{data.name}}" placeholder="Name" />
             </h1>
-            <div class="resource">
-                <input type="number" name="system.health.value" value="{{systemData.health.value}}"/>
-                <span> / </span>
-                <input type="number" name="system.health.max" value="{{systemData.health.max}}"/>
-            </div>
-            <div class="resource">
-                <input type="number" name="system.power.value" value="{{systemData.power.value}}"/>
-                <span> / </span>
-                <input type="number" name="system.power.max" value="{{systemData.power.max}}"/>
-            </div>
         </div>
     </header>
 
@@ -25,7 +15,7 @@
         <a class="item" data-tab="traits">Traits</a>
         <a class="item" data-tab="nuances">Nuances</a>
         <a class="item" data-tab="inventory">Inventaire</a>
-        <a class="item" data-tab="background">Histoire</a>
+        <a class="item" data-tab="notes">Notes</a>
     </nav>
 
     {{!-- Sheet Body --}}
@@ -33,26 +23,7 @@
 
         {{!-- Traits Tab --}}
         <div class="tab traits" data-group="primary" data-tab="traits">
-            <header class="attributes-header flexrow">
-                <span class="attribute-key">{{localize "SIMPLE.AttributeKey"}}</span>
-                <span class="attribute-value">{{localize "SIMPLE.AttributeValue"}}</span>
-                <span class="attribute-label">{{localize "SIMPLE.AttributeLabel"}}</span>
-                <span class="attribute-dtype">{{localize "SIMPLE.AttributeDtype"}}</span>
-                <a class="attribute-control" data-action="create" data-group="{{group}}"><i class="fas fa-plus"></i></a>
-            </header>
-
-            {{!-- Render the attribute list partial. --}}
-            {{> "systems/ultradifra/templates/parts/sheet-attributes.html" attributes=systemData.ungroupedAttributes dtypes=dtypes}}
-
-            {{!-- Render the grouped attributes partial and control. --}}
-            <div class="groups">
-                {{> "systems/ultradifra/templates/parts/sheet-groups.html" attributes=systemData.groupedAttributes groups=systemData.groups dtypes=dtypes}}
-
-                <div class="group-controls flexrow">
-                    <input class="group-prefix" type="text" value=""/>
-                    <a class="button group-control" data-action="create-group"><i class="fas fa-plus"></i>Add Attribute Group</a>
-                </div>
-            </div>
+            
         </div>
 
         {{!-- Nuances Tab --}}
@@ -80,7 +51,7 @@
         </div>
 
         {{!-- Inventory Tab --}}
-        <div class="tab nuances" data-group="primary" data-tab="nuances">
+        <div class="tab inventory" data-group="primary" data-tab="inventory">
             <header class="attributes-header flexrow">
                 <span class="attribute-key">{{localize "SIMPLE.AttributeKey"}}</span>
                 <span class="attribute-value">{{localize "SIMPLE.AttributeValue"}}</span>
@@ -104,8 +75,8 @@
         </div>
 
         {{!-- Background Tab --}}
-        <div class="tab background" data-group="primary" data-tab="background">
-            {{editor biographyHTML target="system.biography" button=true editable=editable engine="prosemirror"}}
+        <div class="tab notes" data-group="primary" data-tab="notes">
+            {{editor content=data.notes target="data.notes" button=true owner=owner editable=editable}}
         </div>
 
     </section>
