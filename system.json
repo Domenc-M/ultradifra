@@ -4,11 +4,11 @@
   "description": "Le systeme Ultradifra",
   "authors": [
     {
-      "name": "Asacolips",
-      "discord": "asacolips"
+      "name": "Malryck",
+      "discord": "malryck"
     }
   ],
-  "url": "Replace this with a link to your public repository",
+  "url": "https://github.com/Domenc-M/ultradifra",
   "license": "LICENSE.txt",
   "readme": "README.md",
   "bugs": "Replace this with a link to file issues or tickets",
@@ -20,7 +20,7 @@
       "thumbnail": "systems/ultradifra/assets/anvil-impact.png"
     }
   ],
-  "version": "1.3.0",
+  "version": "0.1",
   "compatibility": {
     "minimum": 11,
     "verified": "11.315"
@@ -29,9 +29,9 @@
   "styles": ["css/ultradifra.css"],
   "languages": [
     {
-      "lang": "en",
-      "name": "English",
-      "path": "lang/en.json"
+      "lang": "fr",
+      "name": "French",
+      "path": "lang/fr.json"
     }
   ],
   "packs": [],

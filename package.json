@@ -1,7 +1,7 @@
 {
-  "name": "boilerplate",
+  "name": "ultradifra",
   "version": "1.0.0",
-  "description": "CSS compiler for the Boilerplate system",
+  "description": "CSS compiler for the Ultradifra system",
   "scripts": {
     "build": "gulp build",
     "compile": "gulp css",
