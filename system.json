@@ -2,7 +2,7 @@
   "id": "ultradifra",
   "version": "0.1",
   "title": "UltraDifra",
-  "url": "https://github.com/foundryvtt/worldbuilding/",
+  "url": "https://github.com/foundryvtt/ultradifra/",
   "description": "Un systeme de jeu generique et chaotique",
   "license": "LICENSE.txt",
   "authors": [
@@ -11,8 +11,8 @@
       "url": "https://foundryvtt.com"
     }
   ],
-  "esmodules": ["module/simple.js"],
-  "styles": ["styles/simple.css"],
+  "esmodules": ["module/ultradifra.js"],
+  "styles": ["styles/ultradifra.css"],
   "packs": [],
   "languages": [
     {
