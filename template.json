@@ -3,19 +3,25 @@
   "types": ["character"],
   "htmlFields": ["biography"],
   "character": {
-    "biography": "",
-    "health": {
-      "value": 10,
-      "min": 0,
-      "max": 10
+    "physicalStress": {
+      "value": 0,
+      "max": 6
     },
-    "power": {
-      "value": 5,
-      "min": 0,
-      "max": 5
+    "mentalStress": {
+      "value": 0,
+      "max": 6
     },
-    "attributes": {},
-    "groups": {}
+    "memories" : {
+      "value": 6,
+      "max": 6
+    },
+    "refraction" : {
+      
+    },
+    "traits": {},
+    "nuances": {},
+    "inventory": {},
+    "background": ""
   }
 },
 "Item": {
